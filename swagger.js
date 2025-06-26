@@ -32,6 +32,10 @@ const doc = {
       url: `http://localhost:${process.env.DEV_APP_PORT}`,
       description: "Development Port", // by default: ''
     },
+    {
+      url: "https://mwbe-latest-w8vt.onrender.com",
+      description: "Production Port"
+    }
     // { ... }
   ],
   tags: [
