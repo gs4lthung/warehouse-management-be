@@ -56,6 +56,7 @@ class InputService {
         POPULATE_INPUT_DETAILS[1],
         POPULATE_INPUT_DETAILS[2],
         POPULATE_INPUT_DETAILS[3],
+        POPULATE_INPUT_DETAILS[4],
       ])
       .lean();
     if (!inputDetailHolders || inputDetailHolders.length === 0)
