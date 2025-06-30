@@ -177,7 +177,7 @@ class InputService {
       actualQuantity || inputDetailHolder.actualQuantity;
     inputDetailHolder.inputPrice = inputPrice || inputDetailHolder.inputPrice;
     inputDetailHolder.status = status || inputDetailHolder.status;
-    inputDetailHolder.updatedBy = requesterId || inputDetailHolder.updatedBy;
+    inputDetailHolder.updatedBy = new mongoose.Types.ObjectId(requesterId) || inputDetailHolder.updatedBy;
     await inputDetailHolder.save();
 
     return;
