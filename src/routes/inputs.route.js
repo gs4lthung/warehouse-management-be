@@ -59,7 +59,7 @@ router.put("/details/:id",
             }
         }
     } */
-    checkRoles({ requiredRoles: [USER_ROLES.MANAGER, USER_ROLES.INVENTORY_STAFF,USER_ROLES.REPORT_STAFF] }),
+    checkRoles({ requiredRoles: [USER_ROLES.MANAGER, USER_ROLES.INVENTORY_STAFF, USER_ROLES.REPORT_STAFF] }),
     catchAsyncHandle(inputController.updateInputDetail)
 )
 

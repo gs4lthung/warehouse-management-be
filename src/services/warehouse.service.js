@@ -234,9 +234,9 @@ class WarehouseService {
 
         switch (transactionType) {
             case "Input":
-                if (!itemHolder.manufactureDate || !itemHolder.expiredDate) {
-                    throw new BadRequestError("Manufacture date and expired date is required");
-                }
+                // if (!itemHolder.manufactureDate || !itemHolder.expiredDate) {
+                //     throw new BadRequestError("Manufacture date and expired date is required");
+                // }
 
                 if (!inputId) {
                     throw new BadRequestError("Input id is required");

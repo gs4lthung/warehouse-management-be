@@ -96,13 +96,13 @@ class InputService {
 
   static updateInputDetail = async ({
     id,
+    requesterId,
     requestQuantity,
     actualQuantity,
     inputPrice,
     manufactureDate,
     expiredDate,
     status,
-    requesterId,
   }) => {
     const inputDetailHolder = await inputDetailModel.findOne({
       _id: id,
@@ -560,7 +560,7 @@ class InputService {
       toDate,
       inventoryStaffIds,
     });
-    
+
     if (
       !id ||
       !Array.isArray(inventoryStaffIds) ||
